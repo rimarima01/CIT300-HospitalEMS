@@ -26,7 +26,8 @@ public class EmergencyQueue {
     public int size() {
         return size;
     }
-
+    // Adds a patient at the rear of the queue.
+    // Patients are removed from the front, following FIFO order.
     // ---------- ENQUEUE ----------
 
     public void enqueue(EmergencyPatient patient) {
