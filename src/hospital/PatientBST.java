@@ -38,7 +38,8 @@ public class PatientBST {
         }
         return node;
     }
-
+      // Searches for a patient by comparing the Patient ID with each BST node.
+     // Smaller IDs move to the left subtree and larger IDs move to the right subtree.
     // ---------- SEARCH ----------
 
     public Patient search(int patientId) {
