@@ -24,7 +24,8 @@ public class TreatmentStack {
     public int size() {
         return size;
     }
-
+// Adds a completed treatment record to the top of the stack.
+// The most recently added record becomes the first record removed.
     // ---------- PUSH ----------
 
     public void push(TreatmentRecord record) {
@@ -34,7 +35,8 @@ public class TreatmentStack {
         size++;
         System.out.println("Treatment record pushed to history: " + record);
     }
-
+// Removes and returns the treatment record at the top of the stack.
+// This follows the LIFO principle: Last-In, First-Out.
     // ---------- POP ----------
 
     public TreatmentRecord pop() {
