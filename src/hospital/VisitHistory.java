@@ -28,7 +28,8 @@ public class VisitHistory {
     public int size() {
         return size;
     }
-
+// Adds a new visit to the end of the patient's singly linked list.
+// Each node stores one visit and a reference to the next node.
     // ---------- ADD ----------
 
     public void addVisit(Visit visit) {
@@ -42,7 +43,7 @@ public class VisitHistory {
         }
         size++;
     }
-
+// Searches the linked list by Visit ID and removes the matching node.
     // ---------- REMOVE ----------
 
     public boolean removeVisit(int visitId) {
@@ -75,7 +76,7 @@ public class VisitHistory {
         }
         return false; // visit ID not found
     }
-
+// Traverses the list from the head node until the requested Visit ID is found.
     // ---------- SEARCH ----------
 
     public Visit searchVisit(int visitId) {
